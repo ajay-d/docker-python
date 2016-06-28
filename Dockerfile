@@ -15,7 +15,8 @@ RUN pip3 install --upgrade pip
 RUN pip3 install \
     flask \
     numpy \
-    pandas		
+    pandas \
+	scipy	
 	
 RUN pip3 install --upgrade $TF_BINARY_URL
 

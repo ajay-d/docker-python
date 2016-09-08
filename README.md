@@ -8,8 +8,8 @@ Comes in under 400 MB
 
 Based off of:
 * Ubuntu 16.04 LTS
-* Tensorflow 0.9.0 (CPU only)
-* Python 3.5.1
+* Tensorflow 0.10 (CPU only)
+* Python 3.5.2
    * flask
    * numpy
    * pandas

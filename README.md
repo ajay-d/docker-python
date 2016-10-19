@@ -1,6 +1,6 @@
 Basic Python Image
 =====
-Lightweight python image with Flask, Tensorflow and SciPy  
+Lightweight python image with Keras, Tensorflow and Scikit-learn  
 Comes in under 400 MB
 
 [Docker Hub Repo](https://hub.docker.com/r/burrito/python/)  
@@ -8,18 +8,20 @@ Comes in under 400 MB
 
 Based off of:
 * Ubuntu 16.04 LTS
-* Tensorflow 0.10 (CPU only)
+* Tensorflow 0.11 (CPU only)
 * Python 3.5.2
    * flask
+   * keras
    * numpy
    * pandas
+   * scikit-learn
    * scipy
-
+   * theano
 
 To start container interactively:
 -----
 ```
-$ docker run -it -p 5000:5000 burrito/python
+$ docker run -it burrito/python
 $ python3
 ```
 ---

@@ -8,8 +8,6 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
 && rm -rf /var/lib/apt/lists/*
 
-ENV TF_BINARY_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl
-
 RUN pip3 install --upgrade pip
 
 RUN pip3 install \
@@ -17,11 +15,22 @@ RUN pip3 install \
     numpy \
     pandas \
     scipy
-
+	
+##Install Tensorflow
+ENV TF_BINARY_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl
 RUN pip3 install --upgrade $TF_BINARY_URL
+
 RUN pip3 install \
     keras \
     scikit-learn
+
+##Install XGBoost
+RUN cd /tmp && \
+    git clone --recursive https://github.com/dmlc/xgboost && \
+    cd xgboost && \
+    make -j4 &&\
+    cd python-package && \
+    python3 setup.py install
 
 EXPOSE 5000
 

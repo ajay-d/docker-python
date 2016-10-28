@@ -5,6 +5,7 @@ RUN apt-get upgrade -y && apt-get dist-upgrade
 
 RUN apt-get update && apt-get install -y \
     build-essential \
+    git \
     python3-pip \
 && rm -rf /var/lib/apt/lists/*
 

@@ -34,3 +34,18 @@ To run a Flask script:
 ```
 $ docker run -d -p 5000:5000 -v `pwd`:/home/work burrito/python python3 script.py
 ```
+---
+To install other packages:
+```
+$ docker run -i -t burrito/python
+$ docker ps -a
+$ docker exec `container ID` pip3 install `package`
+```
+---
+Copy files in or out:
+-----
+```
+$ docker cp `local directory` `container ID`:/home/work
+$ docker cp `container ID`:/home/work/data.csv `local directory`
+```
+---

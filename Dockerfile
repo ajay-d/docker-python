@@ -8,20 +8,20 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
 && rm -rf /var/lib/apt/lists/*
 
-ENV TF_BINARY_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc0-cp35-cp35m-linux_x86_64.whl
+ENV TF_BINARY_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0rc2-cp35-cp35m-linux_x86_64.whl
 
 RUN pip3 install --upgrade pip
 
 RUN pip3 install \
     flask \
+    h5py \
+    keras \
     numpy \
     pandas \
-    scipy
+    scipy \
+    scikit-learn
 
 RUN pip3 install --upgrade $TF_BINARY_URL
-RUN pip3 install \
-    keras \
-    scikit-learn
 
 EXPOSE 5000
 

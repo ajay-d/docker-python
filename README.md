@@ -10,7 +10,8 @@ Based off of:
 * Tensorflow 0.11 (CPU only)
 * Python 3.5.2
    * flask 0.11.1
-   * keras 1.1.0
+   * h5py 2.6.0
+   * keras 1.1.1
    * numpy 1.11.2
    * pandas 0.19.0
    * scikit-learn 0.18
@@ -38,6 +39,7 @@ $ docker run -d -p 5000:5000 -v `pwd`:/home/work burrito/python python3 script.p
 ```
 ---
 To install other packages:
+-----
 ```
 $ docker run -i -t burrito/python
 $ docker ps -a

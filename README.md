@@ -13,7 +13,7 @@ Based off of:
    * h5py 2.6.0
    * keras 1.1.1
    * numpy 1.11.2
-   * pandas 0.19.0
+   * pandas 0.19.1
    * scikit-learn 0.18
    * scipy 0.18.1
    * theano 0.8.2

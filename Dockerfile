@@ -32,6 +32,9 @@ RUN cd /tmp && \
     cd python-package && \
     python3 setup.py install
 
+##Install Bayesian Optimization
+RUN pip3 install git+https://github.com/fmfn/BayesianOptimization.git
+
 EXPOSE 5000
 
 RUN pip3 list

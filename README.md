@@ -1,4 +1,4 @@
-Basic Python Image
+Python Data Science Image
 =====
 Lightweight python image with Keras, Tensorflow and Scikit-learn  
 

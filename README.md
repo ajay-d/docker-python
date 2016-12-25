@@ -7,14 +7,14 @@ Lightweight python image with Keras, Tensorflow and Scikit-learn
 
 Based off of:
 * Ubuntu 16.04 LTS
-* Tensorflow 0.11 (CPU only)
+* Tensorflow 0.12 (CPU only)
 * Python 3.5.2
-   * flask 0.11.1
+   * flask 0.12
    * h5py 2.6.0
    * keras 1.1.1
-   * numpy 1.11.2
+   * numpy 1.11.3
    * pandas 0.19.1
-   * scikit-learn 0.18
+   * scikit-learn 0.18.1
    * scipy 0.18.1
    * theano 0.8.2
    * xgboost 0.6

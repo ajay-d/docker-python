@@ -11,7 +11,7 @@ Based off of:
 * Python 3.5.2
    * flask 0.12
    * h5py 2.6.0
-   * keras 1.1.1
+   * keras 1.2.0
    * numpy 1.11.3
    * pandas 0.19.1
    * scikit-learn 0.18.1

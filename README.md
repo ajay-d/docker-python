@@ -22,6 +22,8 @@ Based off of:
 To start container interactively:
 -----
 ```
+$ docker run -it burrito/python bash
+or
 $ docker run -it burrito/python
 $ python3
 ```

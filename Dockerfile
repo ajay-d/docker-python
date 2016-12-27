@@ -25,12 +25,13 @@ ENV TF_BINARY_URL https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow
 RUN pip3 install --upgrade $TF_BINARY_URL
 
 ##Install XGBoost
-RUN cd /tmp && \
-    git clone --recursive https://github.com/dmlc/xgboost && \
-    cd xgboost && \
-    make -j4 &&\
-    cd python-package && \
-    python3 setup.py install
+#RUN cd /tmp && \
+#    git clone --recursive https://github.com/dmlc/xgboost && \
+#    cd xgboost && \
+#    make -j4 &&\
+#    cd python-package && \
+#    python3 setup.py install
+RUN pip3 install xgboost
 
 ##Install Bayesian Optimization
 RUN pip3 install git+https://github.com/fmfn/BayesianOptimization.git

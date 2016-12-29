@@ -9,6 +9,7 @@ Based off of:
 * Ubuntu 16.04 LTS
 * Tensorflow 0.12 (CPU only)
 * Python 3.5.2
+   * feather 0.3.1
    * flask 0.12
    * h5py 2.6.0
    * keras 1.2.0
